@@ -27,6 +27,7 @@ setup(
         + '\n\n'
         + _read("CHANGES.rst")
     ),
+    long_description_content_type='text/x-rst',
     license='BSD',
     keywords='sphinx extension question',
     classifiers=[
