@@ -1,16 +1,16 @@
 # -*- coding: utf-8 -*-
+# This was initially based on ``sphinx.ext.todo``, cut way down.
+# A project at https://github.com/jpcw/sphinxcontrib-gen_node is a generic version,
+# but doesn't work on current Sphinx versions.
+#
+# Portions of the below may remain Copyright 2007-2018 by the Sphinx team.
 """
-    question
-    ~~~~~~~~~~~~~~~
-Based on sphinx.ext.todo, cut down.
-https://github.com/jpcw/sphinxcontrib-gen_node is really what we want, but it doesn't work
-on current versions of sphinx.
-    Allow todos to be inserted into your documentation.  Inclusion of todos can
-    be switched of by a configuration variable.  The todolist directive collects
-    all todos of your project and lists them along with a backlink to the
-    original location.
-    :copyright: Copyright 2007-2018 by the Sphinx team, see AUTHORS.
-    :license: BSD, see LICENSE for details.
+question and questionlist
+
+Allow questions to be inserted into your documentation. Inclusion of
+questions can be switched of by a configuration variable. The questionlist
+directive collects all questions of your project and lists them along with
+a backlink to the original location.
 """
 
 from docutils import nodes
