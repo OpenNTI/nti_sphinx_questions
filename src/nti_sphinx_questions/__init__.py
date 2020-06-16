@@ -18,12 +18,15 @@ from docutils.parsers.rst import directives
 from docutils.parsers.rst.directives.admonitions import BaseAdmonition
 
 import sphinx
-from sphinx.environment import NoUri
+try:
+    from sphinx.environment import NoUri
+except ImportError:
+    from sphinx.errors import NoUri
 from sphinx.locale import _, __
 from sphinx.util import logging
 from sphinx.util.docutils import SphinxDirective
 from sphinx.util.nodes import set_source_info
-from sphinx.util.texescape import tex_escape_map
+
 
 logger = logging.getLogger(__name__)
 
